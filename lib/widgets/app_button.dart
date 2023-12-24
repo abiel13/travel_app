@@ -22,10 +22,7 @@ class ResponsiveButton extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            Text(
-              '$text',
-              style: TextStyle(color: Colors.white),
-            ),
+            text != null ? Text('$text') : const Text(''),
             Image.asset('img/button-one.png')
           ],
         ),
